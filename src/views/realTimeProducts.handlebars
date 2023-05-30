@@ -1,0 +1,22 @@
+<div>
+  <h1>Real Time Products</h1>
+
+  <table id="productosContainer">
+  </table>
+
+  <br />
+
+  {{! Formulario para agregar productos }}
+  <form action="">
+    <input type="text" id="id" placeholder="Id" />
+    <input type="text" id="title" placeholder="Titulo" />
+    <input type="text" id="price" placeholder="Precio" />
+    <input type="text" id="category" placeholder="Categoria" />
+
+    <button type="submit" id="btnAdd">Agregar</button>
+  </form>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realtimeproducts.js"></script>
