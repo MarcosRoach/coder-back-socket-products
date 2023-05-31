@@ -1,12 +1,22 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>TITULO</th>
+    <th>PRECIO</th>
+    <th> CATEGORIA</th>
+  </tr>
 
-  </body>
-  <script type="text/javascript" src="/js/index.js"></script>
-</html>
+  {{#each productos}}
+
+    <tr>
+      <td>{{this.id}}</td>
+      <td>{{this.title}}</td>
+      <td>{{this.price}}</td>
+      <td>{{this.category}}</td>
+    </tr>
+
+  {{/each}}
+
+</table>
+
+<script src="/js/inx.js"></script>
